@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
 <meta charset="UTF-8">
 <title>Chaube Ji Sweets – Lohaghat</title>
@@ -8,60 +8,96 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
+
 body{
   margin:0;
   font-family:Poppins,sans-serif;
-  background:#fffaf4;
-  color:#333;
+  background:#fff8f2;
+  color:#2b2b2b;
 }
 
 header{
-  background:linear-gradient(135deg,#7a0000,#c01818);
+  background:linear-gradient(135deg,#6a0000,#b71c1c,#d84315);
   color:white;
   text-align:center;
-  padding:70px 20px;
+  padding:80px 20px;
 }
 
 h1{
   font-family:"Playfair Display",serif;
-  font-size:42px;
+  font-size:44px;
   margin:0;
+  letter-spacing:1px;
 }
 
 .tagline{
-  color:#ffd27f;
-  margin-top:10px;
+  color:#ffd54f;
   font-size:20px;
+  margin-top:10px;
   font-weight:600;
 }
 
+.hero-sub{
+  margin-top:16px;
+  font-size:18px;
+  opacity:.95;
+}
+
+.btn{
+  display:inline-block;
+  margin:14px 8px;
+  padding:14px 26px;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:600;
+  font-size:16px;
+}
+
+.call{background:#ff9800;color:white;}
+.whatsapp{background:#25D366;color:white;}
+
 .section{
-  padding:60px 20px;
   max-width:1150px;
   margin:auto;
+  padding:70px 20px;
 }
 
 .section h2{
   font-family:"Playfair Display",serif;
   text-align:center;
+  font-size:34px;
   color:#7a0000;
-  font-size:32px;
   margin-bottom:40px;
+}
+
+.trust{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:18px;
+}
+
+.trust div{
+  background:white;
+  padding:18px;
+  border-radius:14px;
+  text-align:center;
+  font-weight:600;
+  box-shadow:0 8px 20px rgba(0,0,0,0.08);
 }
 
 .grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-  gap:26px;
+  gap:28px;
 }
 
 .card{
   background:white;
   border-radius:22px;
-  box-shadow:0 15px 35px rgba(0,0,0,0.12);
   overflow:hidden;
-  position:relative;
+  box-shadow:0 15px 35px rgba(0,0,0,0.12);
   transition:.3s;
+  position:relative;
 }
 
 .card:hover{
@@ -99,20 +135,44 @@ h1{
 
 .highlight{
   background:linear-gradient(135deg,#ffe7c2,#ffd27a);
-  padding:26px;
-  border-radius:18px;
+  padding:30px;
+  border-radius:20px;
   text-align:center;
+  font-size:18px;
   font-weight:600;
-  box-shadow:0 8px 22px rgba(0,0,0,0.12);
+  box-shadow:0 10px 25px rgba(0,0,0,0.12);
 }
 
 footer{
   background:#5a0000;
   color:white;
   text-align:center;
-  padding:28px;
-  margin-top:50px;
+  padding:34px 20px;
+  line-height:1.8;
 }
+
+.sticky{
+  position:fixed;
+  bottom:0;
+  left:0;
+  right:0;
+  background:white;
+  display:flex;
+  gap:10px;
+  padding:10px;
+  box-shadow:0 -4px 12px rgba(0,0,0,0.15);
+}
+
+.sticky a{
+  flex:1;
+  text-align:center;
+  padding:12px;
+  border-radius:10px;
+  font-weight:600;
+  text-decoration:none;
+  color:white;
+}
+
 </style>
 </head>
 
@@ -120,49 +180,70 @@ footer{
 
 <header>
 <h1>Chaube Ji Sweets</h1>
-<div class="tagline">Pure Mithai • Fresh Taste • Lohaghat</div>
+<div class="tagline">पहाड़ी खोये की एकमात्र दुकान</div>
+
+<div class="hero-sub">
+32 वर्षों से स्वाद और शुद्धता की पहचान<br>
+Main Chouraha • Near Bus Stand • Lohaghat
+</div>
+
+<a class="btn call" href="tel:9412100406">📞 Call Now</a>
+<a class="btn whatsapp" href="https://wa.me/919412100406">WhatsApp Order</a>
 </header>
 
 <section class="section">
-<h2>Popular Sweets</h2>
+<h2>Why People Trust Us</h2>
+<div class="trust">
+<div>32+ Years Experience</div>
+<div>Authentic Pahadi Khoya</div>
+<div>Fresh Daily Preparation</div>
+<div>Wedding & Party Orders</div>
+<div>Gift Boxes Available</div>
+<div>Cash & Cashless</div>
+</div>
+</section>
+
+<section class="section">
+<h2>Our Special Sweets</h2>
 
 <div class="grid">
 
 <div class="card">
 <div class="badge">Best Seller</div>
-<img src="167de67f50bdab98e1da704a4bca5a13.jpg">
+<img src="fa99b21929e63b010723c70228c56145.jpg">
 <h3>Gulab Jamun</h3>
 <p>Soft syrup sweet</p>
 </div>
 
 <div class="card">
-<img src="2dfe28679d9526bdecc776fe7582cdb.jpg">
+<img src="49e8c2131596f36fd54a5217cb00735.jpg">
 <h3>Kaju Katli</h3>
 <p>Premium cashew mithai</p>
 </div>
 
 <div class="card">
-<img src="358e6e35f65035a7d368d923b9626cc.jpg">
+<img src="35953d4478a4007882e7744ecb607098.jpg">
 <h3>Milk Barfi</h3>
 <p>Rich milk sweet</p>
 </div>
 
 <div class="card">
-<img src="35953d4478a4007882e7744ecb607098.jpg">
+<img src="fa2418d6bd5376e69a1e91e66b34ff46.jpg">
 <h3>Besan Laddoo</h3>
 <p>Traditional laddoo</p>
 </div>
 
 <div class="card">
-<img src="49e8c2131596f36fd54a5217cb00735.jpg">
+<div class="badge">Special</div>
+<img src="2dfe28679d9526bdecc776fe7582cdb.jpg">
 <h3>Pahadi Peda</h3>
-<p>Local specialty</p>
+<p>Khoya specialty</p>
 </div>
 
 <div class="card">
-<img src="4bd21d2fbd6b1fb1a47f254959ecf0a9.jpg">
+<img src="167de67f50bdab98e1da704a4bca5a13.jpg">
 <h3>Soan Papdi</h3>
-<p>Flaky sweet delight</p>
+<p>Festive favorite</p>
 </div>
 
 </div>
@@ -170,14 +251,22 @@ footer{
 
 <section class="section">
 <div class="highlight">
-Wedding • Festival • Bulk Orders Accepted<br>
-Custom Mithai Gift Boxes Available
+Bulk Orders • Wedding Orders • Party Orders Accepted<br>
+Order by Call • WhatsApp • Visit Shop
 </div>
 </section>
 
 <footer>
-© Chaube Ji Sweets — Lohaghat
+<b>Chaube Ji Sweets</b><br>
+Main Chouraha, Near Bus Stand, Lohaghat, Champawat<br>
+Open Daily: 6–7 AM onward<br>
+📞 9412100406
 </footer>
+
+<div class="sticky">
+<a href="tel:9412100406" style="background:#ff9800">Call</a>
+<a href="https://wa.me/919412100406" style="background:#25D366">WhatsApp</a>
+</div>
 
 </body>
 </html>

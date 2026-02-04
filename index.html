@@ -8,12 +8,19 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
-
 body{
   margin:0;
   font-family:Poppins,sans-serif;
   background:#fff8f2;
   color:#2b2b2b;
+}
+
+.topbar{
+  background:linear-gradient(90deg,#ff9800,#ff5722);
+  color:white;
+  text-align:center;
+  padding:10px;
+  font-weight:600;
 }
 
 header{
@@ -27,7 +34,6 @@ h1{
   font-family:"Playfair Display",serif;
   font-size:44px;
   margin:0;
-  letter-spacing:1px;
 }
 
 .tagline{
@@ -40,7 +46,6 @@ h1{
 .hero-sub{
   margin-top:16px;
   font-size:18px;
-  opacity:.95;
 }
 
 .btn{
@@ -50,7 +55,6 @@ h1{
   border-radius:30px;
   text-decoration:none;
   font-weight:600;
-  font-size:16px;
 }
 
 .call{background:#ff9800;color:white;}
@@ -70,21 +74,6 @@ h1{
   margin-bottom:40px;
 }
 
-.trust{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-  gap:18px;
-}
-
-.trust div{
-  background:white;
-  padding:18px;
-  border-radius:14px;
-  text-align:center;
-  font-weight:600;
-  box-shadow:0 8px 20px rgba(0,0,0,0.08);
-}
-
 .grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
@@ -100,11 +89,6 @@ h1{
   position:relative;
 }
 
-.card:hover{
-  transform:translateY(-8px);
-  box-shadow:0 22px 45px rgba(0,0,0,0.18);
-}
-
 .card img{
   width:100%;
   height:210px;
@@ -113,7 +97,6 @@ h1{
 
 .card h3{
   margin:16px 0 6px;
-  font-size:20px;
 }
 
 .card p{
@@ -133,14 +116,27 @@ h1{
   font-weight:600;
 }
 
+.menu-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:16px;
+}
+
+.menu-grid div{
+  background:white;
+  padding:16px;
+  border-radius:14px;
+  text-align:center;
+  font-weight:600;
+  box-shadow:0 6px 16px rgba(0,0,0,0.08);
+}
+
 .highlight{
   background:linear-gradient(135deg,#ffe7c2,#ffd27a);
-  padding:30px;
-  border-radius:20px;
+  padding:28px;
+  border-radius:18px;
   text-align:center;
-  font-size:18px;
   font-weight:600;
-  box-shadow:0 10px 25px rgba(0,0,0,0.12);
 }
 
 footer{
@@ -172,45 +168,27 @@ footer{
   text-decoration:none;
   color:white;
 }
-
 </style>
 </head>
 
 <body>
-<div style="
-background:linear-gradient(90deg,#ff9800,#ff5722);
-color:white;
-text-align:center;
-padding:10px;
-font-weight:600;
-letter-spacing:.5px;
-font-size:15px;">
-🎉 Bulk Orders • Wedding Orders • Festival Gift Boxes Available — Call Now: 9412100406
+
+<div class="topbar">
+🎉 Bulk Orders • Wedding Orders • Festival Gift Boxes Available
 </div>
+
 <header>
 <h1>Chaube Ji Sweets</h1>
 <div class="tagline">पहाड़ी खोये की एकमात्र दुकान</div>
 
 <div class="hero-sub">
 32 वर्षों से स्वाद और शुद्धता की पहचान<br>
-Main Chouraha • Near Bus Stand • Lohaghat
+Main Chouraha, Near Bus Stand, Lohaghat
 </div>
 
 <a class="btn call" href="tel:9412100406">📞 Call Now</a>
 <a class="btn whatsapp" href="https://wa.me/919412100406">WhatsApp Order</a>
 </header>
-
-<section class="section">
-<h2>Why People Trust Us</h2>
-<div class="trust">
-<div>32+ Years Experience</div>
-<div>Authentic Pahadi Khoya</div>
-<div>Fresh Daily Preparation</div>
-<div>Wedding & Party Orders</div>
-<div>Gift Boxes Available</div>
-<div>Cash & Cashless</div>
-</div>
-</section>
 
 <section class="section">
 <h2>Our Special Sweets</h2>
@@ -259,34 +237,41 @@ Main Chouraha • Near Bus Stand • Lohaghat
 </section>
 
 <section class="section">
-<div class="highlight">
-Bulk Orders • Wedding Orders • Party Orders Accepted<br>
-Order by Call • WhatsApp • Visit Shop
+<h2>Complete Product Menu</h2>
+
+<div class="menu-grid">
+<div>Tea</div>
+<div>Gulab Jamun</div>
+<div>Rasgulla</div>
+<div>Milk Barfi</div>
+<div>Milk Cake</div>
+<div>Kaju Katli</div>
+<div>Besan Laddoo</div>
+<div>Motichoor Laddoo</div>
+<div>Bal Mithai</div>
+<div>Chocolate Sweets</div>
+<div>Paneer Sweets</div>
+<div>Assorted Laddoo</div>
+<div>Gift Boxes</div>
+<div>Bulk Orders</div>
+<div>Wedding Orders</div>
 </div>
 </section>
+
 <section class="section">
-
-
-<h2>Find Us on Map</h2>
-
-<div style="text-align:center;">
-  <a href="https://maps.app.goo.gl/em3LhTXdQ2uv5VEq7"
-     target="_blank"
-     style="
-       display:inline-block;
-       background:#d32f2f;
-       color:white;
-       padding:16px 28px;
-       border-radius:30px;
-       font-weight:600;
-       text-decoration:none;
-       font-size:18px;
-       box-shadow:0 8px 20px rgba(0,0,0,0.2);">
-     📍 Open Chaube Ji Sweets in Google Maps
-  </a>
+<div class="highlight">
+Order by Call • WhatsApp • Visit Shop<br>
+Cash & Cashless Accepted
 </div>
-
 </section>
+
+<section class="section" style="text-align:center;">
+<h2>Find Us</h2>
+<a href="https://maps.app.goo.gl/em3LhTXdQ2uv5VEq7"
+   target="_blank"
+   class="btn call">📍 Open in Google Maps</a>
+</section>
+
 <footer>
 <b>Chaube Ji Sweets</b><br>
 Main Chouraha, Near Bus Stand, Lohaghat, Champawat<br>

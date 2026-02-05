@@ -118,12 +118,25 @@ body{
 header{
   background:
     linear-gradient(rgba(120,0,0,0.78), rgba(160,0,0,0.78)),
-    url("YOUR_IMAGE_NAME.jpg") center/cover no-repeat;
+    url("642d7f4c8c982128ebc634e61aa9f4ba.jpg") center/cover no-repeat;
   color:white;
   text-align:center;
   padding:110px 20px 95px;
   position:relative;
   overflow:hidden;
+}
+ 
+header::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  backdrop-filter: blur(6px);
+  z-index:0;
+}
+
+header *{
+  position:relative;
+  z-index:1;
 }
 h1{
   font-family:"Playfair Display",serif;

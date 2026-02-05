@@ -116,41 +116,65 @@ body{
 }
 
 header{
-  background:linear-gradient(135deg,#6a0000,#b71c1c,#d84315);
+  background:
+    radial-gradient(circle at 20% 20%, rgba(255,215,120,.25), transparent 40%),
+    linear-gradient(135deg,#5a0000,#8b0000,#c62828);
   color:white;
   text-align:center;
-  padding:80px 20px;
+  padding:110px 20px 95px;
+  position:relative;
+  overflow:hidden;
 }
 
 h1{
   font-family:"Playfair Display",serif;
-  font-size:44px;
+  font-size:48px;
   margin:0;
+  letter-spacing:.6px;
+  text-shadow:0 6px 24px rgba(0,0,0,.25);
 }
 
 .tagline{
   color:#ffd54f;
-  font-size:20px;
-  margin-top:10px;
-  font-weight:600;
+  font-size:22px;
+  margin-top:14px;
+  font-weight:700;
+  letter-spacing:.3px;
 }
 
 .hero-sub{
-  margin-top:16px;
+  margin-top:18px;
   font-size:18px;
+  opacity:.95;
+  line-height:1.6;
 }
 
 .btn{
   display:inline-block;
-  margin:14px 8px;
-  padding:14px 26px;
-  border-radius:30px;
+  margin:16px 10px;
+  padding:16px 30px;
+  border-radius:40px;
   text-decoration:none;
-  font-weight:600;
+  font-weight:700;
+  letter-spacing:.3px;
+  box-shadow:0 12px 28px rgba(0,0,0,.25);
+  transition:.25s ease;
 }
 
-.call{background:#ff9800;color:white;}
-.whatsapp{background:#25D366;color:white;}
+.btn:hover{
+  transform:translateY(-2px);
+  box-shadow:0 18px 36px rgba(0,0,0,.3);
+    }
+
+.call{
+  background:linear-gradient(135deg,#ffa000,#ff6f00);
+  color:white;
+}
+
+.whatsapp{
+  background:linear-gradient(135deg,#34d06a,#1faa59);
+  color:white;
+}
 
 .section{
   max-width:1150px;
@@ -413,15 +437,19 @@ footer{
 <div class="topbar">
 🎉 Bulk Orders • Wedding Orders • Festival Gift Boxes Available
 </div>
-
 <header>
+
 <h1>Chaube Ji Sweets</h1>
-<div class="tagline">पहाड़ी खोये की एकमात्र दुकान</div>
+
+<div class="tagline">
+पहाड़ी खोये की एकमात्र दुकान
+</div>
 
 <div class="hero-sub">
 32 वर्षों से स्वाद और शुद्धता की पहचान<br>
 Main Chouraha, Near Bus Stand, Lohaghat
 </div>
+
 
 <a class="btn call" href="tel:9412100406">📞 Call Now</a>
 <a class="btn whatsapp" href="https://wa.me/919412100406">WhatsApp Order</a>
@@ -444,6 +472,7 @@ Main Chouraha, Near Bus Stand, Lohaghat
 <h3>Kaju Katli</h3>
 <p>Premium cashew mithai</p>
 </div>
+
 
 <div class="card">
 <img src="35953d4478a4007882e7744ecb607098.jpg">
